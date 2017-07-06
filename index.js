@@ -6,7 +6,7 @@ let inOrder = currentNode => {
 
 let findOrAdd = (currentNode, newNode) => {
     if (newNode.data === currentNode.data) return true
-    if (newNode.data <currentNode.data) {
+    if (newNode.data < currentNode.data) {
         return currentNode.left
             ? findOrAdd(currentNode.left, newNode) 
             : currentNode.left = newNode
